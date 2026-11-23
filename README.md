@@ -1,4 +1,4 @@
-# Sub-Decryptor
+# Sub-Decrypter
 
 Однофайловая утилита для Windows, Linux и Android/Termux, которая превращает
 «клиентские ключи» VPN-приложений в обычные ссылки-подписки и извлекает из них
@@ -117,13 +117,13 @@ pip install pyyaml
 
 ## Как пользоваться
 
-Скрипт не требует установки — просто положите `universal_vpn_parser.py` в любую
+Скрипт не требует установки — просто положите `Sub-Decrypter.py` в любую
 папку и запустите.
 
 ### Меню
 
 ```bash
-python universal_vpn_parser.py
+python Sub-Decrypter.py
 ```
 
 Пункты меню:
@@ -139,16 +139,16 @@ python universal_vpn_parser.py
 ### Одна ссылка или ключ
 
 ```bash
-python universal_vpn_parser.py "happ://crypt/..."
-python universal_vpn_parser.py "incy://crypt1/..."
-python universal_vpn_parser.py "v2raytun://import/..."
-python universal_vpn_parser.py "https://example.com/sub?token=..."
+python Sub-Decrypter.py "happ://crypt/..."
+python Sub-Decrypter.py "incy://crypt1/..."
+python Sub-Decrypter.py "v2raytun://import/..."
+python Sub-Decrypter.py "https://example.com/sub?token=..."
 ```
 
 Флаг `--no-menu` отключает меню после обработки:
 
 ```bash
-python universal_vpn_parser.py "ключ" --no-menu
+python Sub-Decrypter.py "ключ" --no-menu
 ```
 
 ### Пакетный режим
@@ -166,7 +166,7 @@ v2raytun://import/CCCC...
 Запуск:
 
 ```bash
-python universal_vpn_parser.py -b links.txt
+python Sub-Decrypter.py -b links.txt
 ```
 
 ### Первый запуск
@@ -183,7 +183,7 @@ python universal_vpn_parser.py -b links.txt
 
 | Файл | Назначение |
 |---|---|
-| `universal_vpn_parser.py` | сам скрипт |
+| `Sub-Decrypter.py` | сам скрипт |
 | `device.json` | HWID, модель, версия ОС и Happ |
 | `settings.json` | настройки из меню (создаётся при сохранении) |
 | `<домен>.txt` | итоговые конфиги |
